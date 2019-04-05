@@ -13,7 +13,7 @@ Foreach-Object {
     Write-Host "Compiling: ${Name}"
     $CompiledName = $Name
     $CompiledName = $CompiledName.Replace('.s', '.o')
-    $Command = "${PSScriptRoot}/tools/bin/as ${Name} -o ${CompiledName} -I include"
+    $Command = "${PSScriptRoot}/tools/binutils/bin/as ${Name} -o ${CompiledName} -I include"
     $Command = $Command.Replace('\', '/').Replace('C:/', '/mnt/c/')
     bash -c $Command
 }
@@ -28,7 +28,7 @@ Foreach-Object {
     $CompiledName = $Name
     $CompiledName = $CompiledName.Replace('.o', '.bin').Replace('asm', 'build')
     $VADDR = $TEXT_VADDR[$_.Name.Replace('.', '_')]
-    $Command = "${PSScriptRoot}/tools/bin/ld -T ldscript.txt -Ttext ${VADDR} ${Name} -o ${CompiledName}"
+    $Command = "${PSScriptRoot}/tools/binutils/bin/ld -T ldscript.txt -Ttext ${VADDR} ${Name} -o ${CompiledName}"
     $Command = $Command.Replace('\', '/').Replace('C:/', '/mnt/c/')
     bash -c $Command
 }
