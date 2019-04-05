@@ -2,7 +2,7 @@
 
 This is a disassembly of The Legend of Zelda: Ocarina of Time 1.0.
 
-#### Requirements
+### Requirements
 
 * Linux or Windows 10 with Windows Subsystem for Linux.
 * GCC and GNU Make
@@ -12,7 +12,7 @@ This is a disassembly of The Legend of Zelda: Ocarina of Time 1.0.
 * The IRIS Development Option 5.3 C compiler
 * [irixemu](https://github.com/camthesaxman/irixemu) This is a special modified version of QEMU meant for running IRIX executables on Linux.
 
-#### Setting up and building
+### Setting up and building
 
 If you plan to get started by using Windows 10 and the Windows Subsystem for Linux, see the section below this for more detailed guidance.
 
@@ -25,7 +25,7 @@ If you plan to get started by using Windows 10 and the Windows Subsystem for Lin
   - `IRIX_ROOT` - directory where you extracted the IDO 5.3 compiler. This directory should contain `usr` and `lib` subdirectories.
 * Build the ROM by running `make`, alternatively on a Windows system you can use build.ps1.
 
-#### Using Windows 10 with WSL (For Beginners)
+### Using Windows 10 with WSL (For Beginners)
 
 Before you get started, know that you MUST have an `Ocarina of Time v1.0.z64` ROM already. We need to have the base ROM to extract files from that we'll then use to build the ROM ourselves.  Once you have the ROM, rename it to `baserom.z64` and place it in the root directory of the repository.
 
