@@ -13,7 +13,7 @@ Foreach-Object {
     Write-Host "Compiling: ${Name}"
     $CompiledName = $Name
     $CompiledName = $CompiledName.Replace('.s', '.o')
-    $Command = "${PSScriptRoot}/tools/bin/as ${Name} -o ${CompiledName}"
+    $Command = "${PSScriptRoot}/tools/bin/as ${Name} -o ${CompiledName} -I include"
     $Command = $Command.Replace('\', '/').Replace('C:/', '/mnt/c/')
     bash -c $Command
 }
