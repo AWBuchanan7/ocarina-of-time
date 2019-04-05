@@ -10,4 +10,10 @@ baserom
 *.n64
 *.sav
 baserom.z64.bak
-tools/bin/*
+
+# Ignore binaries that may be present in ./tools/
+tools/*.exe
+tools/yaz0
+tools/makeromfs
+tools/binutils/bin/*
+tools/ido5.3_compiler/*
