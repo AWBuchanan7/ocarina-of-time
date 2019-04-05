@@ -11,7 +11,6 @@ This is a disassembly of The Legend of Zelda: Ocarina of Time.
 * GNU binutils compiled for the `mips64-elf` target
 * installation of the IRIS Development Option 5.3 C compiler (see the Releases section)
 * [irixemu](https://github.com/camthesaxman/irixemu) This is a special modified version of QEMU meant for running IRIX executables on Linux.
-* Mono C# Runtime `monodevelop`
 
 #### Setting up and building
 
