@@ -25,6 +25,12 @@ If you plan to get started by using Windows 10 and the Windows Subsystem for Lin
   - `IRIX_ROOT` - directory where you extracted the IDO 5.3 compiler. This directory should contain `usr` and `lib` subdirectories.
 * Build the ROM by running `make`, alternatively on a Windows system you can use build.ps1.
 
+
+### Useful Resources
+
+ * Check out [MIPS Assembly on Wikibooks](https://en.wikibooks.org/wiki/MIPS_Assembly) for a crash course.
+ * Definitely have a look at the [notes](https://github.com/AWBuchanan7/ocarina-of-time/tree/master/notes) directory of this repo.
+ 
 ### Using Windows 10 with WSL (For Beginners)
 
 Before you get started, know that you MUST have an `Ocarina of Time v1.0.z64` ROM already. We need to have the base ROM to extract files from that we'll then use to build the ROM ourselves.  Once you have the ROM, rename it to `baserom.z64` and place it in the root directory of the repository.
