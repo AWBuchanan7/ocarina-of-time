@@ -1,0 +1,34 @@
+# Registers
+
+32 general registers, of which Nintendo has given a naming convention.
+
+    R0 = always zero. Any attempts to modify this register silently fail.
+    T0-T9 = scratch registers. CPU RAM.
+    S0-S7 = registers saved upon function protocol. Trash at will if you know how.
+    A0-A3 = parameter passing to subroutines. Formal but not rigid.
+    RA = return address from subroutine. Not pulled from 'stack'. Change at convenience.
+    V0-V1 = arithmetic values, function return values.
+    SP = stack pointer. Informal.
+    AT = assembler temporary. Free use.
+
+These are formal definitions but not strictly enforced, save for R0 which is hardwired.
+
+# Coprocessors
+
+In addition to the CPU, there are three other coprocessors.
+
+    COP0 = memory management unit (MMU). Better known as 'virtual memory'.
+    COP1 = floating-point unit (FPU).
+    COP2 = video coprocessor (RCP).
+
+# Signed Addition
+
+Care is required when using the unsigned family of MIPS instructions as the signedness refers to only whether the instruction will generate a trap on overflow. MIPS will sign-extend an operand regardless of whether ADDI or ADDIU is used:
+
+LI $A0, 8013 ;A0 = 0x80130000
+ADDIU $A0, $A0, FFFF ;A0 = 0x8012FFFF
+
+Essentially when adding a value greater than 0x7FFF, even with the unsigned addition instructions, the effect is as if the value were negative. This also affects relative addressing, e.g.:
+
+LI $A0, 8013 ;A0 = 0x80130000
+LW $A1, FFFF($A0) ;load word from 0x8012FFFF
