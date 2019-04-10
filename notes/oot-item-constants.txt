@@ -1,0 +1,31 @@
+$00 deku sticks		$01 deku nuts		$02 bombs
+$03 fairy bow		$04 fire arrow		$05 din's fire
+$06 fairy slingshot	$07 fairy ocarina	$08 ocarina of time
+$09 bombchus		$0A hookshot		$0B longshot
+$0C ice arrow		$0D farore's wind	$0E boomerang
+$0F lens of truth	$10 magic beans		$11 megaton hammer
+$12 light arrow		$13 nayru's love	$14 empty bottle
+$15 red potion		$16 green potion	$17 blue potion
+$18 fairy		$19 fish		$1A full lon lon milk
+$1B ruto's letter	$1C blue flame		$1D bugs
+$1E big poe		$1F half lon lon milk	$20 poe
+$21 weird egg		$22 chicken		$23 zelda's letter
+$24 keaton mask		$25 skull mask		$26 spooky mask
+$27 bunny hood		$28 goron mask		$29 zora mask
+$2A gerudo mask		$2B mask of truth	$2C sold out
+$2D pocket egg		$2E pocket cucco	$2F cojiro
+$30 odd mushroom	$31 odd potion		$32 poacher saw
+$33 broken goron sword	$34 prescription	$35 eyeball frog
+$36 eye drops		$37 claim check		$38 powered fire arrow
+$39 powered ice arrow	$3A powered light arrow	$3B kokiri sword
+$3C master sword	$3D giant's knife	$3E deku shield
+$3F hylian shield	$40 mirror shield	$41 kokiri tunic
+$42 goron tunic		$43 zora tunic		$44 kokiri boots
+$45 iron boots		$46 hover boots		$47 small bullet bag
+$48 medium bullet bag	$49 large bullet bag	$4A small quiver
+$4B medium quiver	$4C large quiver	$4D small bomb bag
+$4E medium bomb bag	$4F large bomb bag	$50 goron bracelet
+$51 silver gauntlets	$52 golden gauntlets	$53 silver scale
+$54 golden scale	$55 broken giants knife	$56 adult wallet
+$57 giant wallet	$58 deku seeds		$59 fishing rod
+$ff nothing
